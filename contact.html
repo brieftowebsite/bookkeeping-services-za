@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Bookkeeping Services ZA</title>
+  <meta name="description" content="Contact Bookkeeping Services ZA for bookkeeping, payroll admin, SARS admin, catch-up bookkeeping and small business admin support.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Bookkeeping Services ZA</a>
+    <nav aria-label="Main navigation">
+      <a href="services.html">Services</a>
+      <a href="payroll.html">Payroll</a>
+      <a href="sars-compliance.html">SARS Support</a>
+      <a href="about.html">About</a>
+      <a class="nav-cta" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Contact</p>
+      <h1>Ask for bookkeeping or admin support.</h1>
+      <p class="lead">Service area: Edenvale, Johannesburg and remote South Africa.</p>
+    </section>
+
+    <section class="section grid two">
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden"><label>Do not fill this in: <input name="bot-field"></label></p>
+
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Phone<input type="tel" name="phone"></label>
+        <label>What do you need help with?
+          <select name="enquiry-type" required>
+            <option value="">Please choose</option>
+            <option>Monthly bookkeeping</option>
+            <option>Catch-up bookkeeping</option>
+            <option>Payroll admin</option>
+            <option>SARS or compliance admin</option>
+            <option>General business admin</option>
+          </select>
+        </label>
+        <label>Message<textarea name="message" rows="6" required></textarea></label>
+        <button class="button" type="submit">Send enquiry</button>
+      </form>
+
+      <aside class="card">
+        <h2>Before you send</h2>
+        <p>Briefly explain what is behind, what needs to be cleaned up, or what monthly help you are looking for.</p>
+        <p>For catch-up work, include roughly how many months of records need attention.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>© Bookkeeping Services ZA. Small business financial admin support.</p></footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
